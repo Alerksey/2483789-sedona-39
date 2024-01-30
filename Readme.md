@@ -2,7 +2,7 @@
 
 * Студент: [Алексей Неброев](https://up.htmlacademy.ru/htmlcss/39/user/2483789).
 * Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
-
+* Сайт [МОЙ проект Седона](https://alerksey.github.io/2483789-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
