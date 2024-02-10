@@ -2,18 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
-  </head>
-
-<body>
-<header class="page-header">
- <nav class="navigation">
+    <title>HTML Academy: Седона</title>
+</head>
+  <body class="page">
+   <header class="page-header" data-test="header">
+    <a class="logo" href="index.html" aria-current="page">
+      <img src="image/logotype.svg" width="140" height="70" alt="Логотип сайта Седона">
+    </a>
   <ul class="navigation-list">
     <li class="navigation-item">
-      <a class="navigation-link" href="faq.html">Главная</a>
+      <a class="navigation-link" href="index.html">Главная</a>
     </li>
     <li class="navigation-item">
-      <a class="navigation-link" href="about.html">О Седоне</a>
+      <a class="navigation-link" href="#">О Седоне</a>
     </li>
     <li class="navigation-item">
       <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -88,10 +89,52 @@
   <h3 class="services-name">Сувениры</h3>
   <p class="services-item">Не только китайские но и настоящего местного производства!</p>
 </li>
+<li class="services-item">
+  <h3 class="services-name">Заинтересовались?</h3>
+  <p class="services-item">Укажите предпологаемые даты поездки, и мы подскажем вам лучшие предложения гостиниц в Седоне</p>
+</li>
   </ul>
+  <a class="button button-all" href="#">Поиск гостиницы в Седоне</a>
 </section>
 </main>
-
-
-  </body>
+<footer class="page-footer" data-test="footer">
+  <section class="newsletter newsletter-index" data-test="subscribe">
+  <h2>Подпишитесь на рассылку</h2>
+    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+    <label class="visually-hidden" for="newsletter-email">Email</label>
+    <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+    <button class="newsletter-button" type="submit">Подписаться</button>
+   </form>
+  </section>
+  <section class="social">
+   <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="social-list">
+     <li class="social-item">
+      <a href="https://vk.com/htmlacademy">
+      <span class="visually-hidden">Vkontakte</span>
+      </a>
+    </li>
+     <li class="social-item">
+      <a href="https://t.me/htmlacademy">
+      <span class="visually-hidden">Telegram</span>
+     </a>
+    </li>
+     <li class="social-item">
+     <a href="https://www.youtube.com/user/htmlacademyru">
+      <span class="visually-hidden">Youtube</span>
+     </a>
+    </li>
+   </ul>
+  </section>
+  <p class="contact-tel">
+    <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+  </p>
+  <p class="about-text">
+  <a href="https://htmlacademy.ru/">
+    <img src="image/logo-htmlacademy.svg" width="115" height="33" alt="Логотип разработчика">
+  </a>
+  </p>
+ </footer>
+</body>
 </html>
