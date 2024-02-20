@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page">
@@ -47,7 +48,7 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="navigation-link" href="index.html">
-          <img src="images/main.svg" width="12" height="12" alt="main"></a>
+            <img src="images/main.svg" width="12" height="12" alt="main"></a>
           <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
         </li>
       </ul>
@@ -63,7 +64,7 @@
             <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="Pool" checked>
-                 Бассейн
+                Бассейн
               </label>
             </li>
             <li class="catalog-filter-item">
@@ -124,13 +125,13 @@
         <option value="expensive">Дорогие</option>
       </select>
       <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать список</span>
+        <img src="images/smail_ic.svg" width="16" height="14" alt="мелкие значки">
       </a>
       <a class="button" href="#">
-        <span class="visually-hidden">Показать мелкие карточки</span>
+        <img src="images/large_ic.svg" width="16" height="14" alt="крупные значки">
       </a>
       <a class="button" href="#">
-        <span class="visually-hidden">Показать крупные карточки</span>
+        <img src="images/list_ic1.svg" width="16" height="14" alt="список">
       </a>
       <ul class="product-list">
         <li class="hotel-card">
@@ -233,7 +234,7 @@
   </main>
 
   <footer class="page-footer" data-test="footer">
-    <section class="newsletter newsletter-index" data-test="subscribe">
+    <section class="newsletter newsletter-inner" data-test="subscribe">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
