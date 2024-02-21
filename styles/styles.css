@@ -291,23 +291,18 @@ body {
   line-height: 20px;
 }
 
-.hotel-card-button {
-font-family: PT Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-text-align: center;
-font-style: normal;
-text-decoration: none;
-
-}
-
-.hotel-card-link {
+.hotel-more-button {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  font-style: normal;
   text-decoration: none;
   background-color: #756157;
 }
 
-.hotel2-card-button {
+.hotel-favorites-button-celected {
 font-family: PT Sans;
 font-size: 16px;
 font-weight: 700;
@@ -318,7 +313,14 @@ text-decoration: none;
   background-color: #7DB54F;
 }
 
-.hotel-card-button {
+.hotel-favorites-button-default {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
   background-color: #82B3D3;
 }
 
