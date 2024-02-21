@@ -292,6 +292,7 @@ body {
 }
 
 .hotel-more-button {
+  color: #FFFFFF;
   font-family: PT Sans;
   font-size: 16px;
   font-weight: 700;
@@ -303,6 +304,7 @@ body {
 }
 
 .hotel-favorites-button-celected {
+  color: #FFFFFF;
 font-family: PT Sans;
 font-size: 16px;
 font-weight: 700;
@@ -314,6 +316,7 @@ text-decoration: none;
 }
 
 .hotel-favorites-button-default {
+  color: #FFFFFF;
   font-family: PT Sans;
   font-size: 16px;
   font-weight: 700;
