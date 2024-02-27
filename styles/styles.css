@@ -119,11 +119,9 @@
 
 .container {
   width: 1200px;
-
   min-height: 100%;
   display: flex;
   flex-direction: column;
-
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 10px 15px #cdcccc;
@@ -131,7 +129,7 @@
 
 /* --------------------------------------- КНОПЧУХИ--------------------------------- */
 .button {
-  font-size: 16px;
+   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -140,7 +138,9 @@
 }
 
 .button-color {
-  background-color: #756157;
+
+  background-color: #c02828;
+
 }
 
 .button-select {
