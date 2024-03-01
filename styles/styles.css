@@ -80,7 +80,6 @@
 
 .title-card {
   margin-bottom: 62px;
-
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -89,10 +88,13 @@
 }
 
 .phone-text {
+  font: "PT Sans";
+  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
 
 .block {
@@ -132,12 +134,18 @@
    font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
 }
 
 .button-color {
+  width: Fixed 1644px;
+  height: Hug 33333px;
+  padding: 0;
+  border-radius: 4px;
+  gap: 10px;
 
   background-color: #c02828;
 
@@ -406,11 +414,26 @@ background-color: #83B3D3;
   flex-wrap: wrap;
 }
 
+
 .social-link {
-  display: block;
+  display: inline-block;
   padding: 12px 13px;
-  min-width: 24px;
-  min-height: 17px;
+  width: 24px;
+ height: 14px;
+}
+
+.social-link::before {
+ content: '';
+ display: inline block;
+ width: 24px;
+ height: 14px;
+ background-color: #83B3D3;
+ mask-image: url(../images/icon/vkontakte.svg);
+ mask-size: 24px 14px;
+}
+
+.social-link:hover::before {
+  background-color: #070f80;
 }
 
 .filters {
@@ -630,6 +653,7 @@ text-decoration: none;
   text-decoration: none;
   background-color: #82B3D3;
 }
+
 
 
 
