@@ -5,13 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: каталог</title>
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-<div class="container">
+
 <body>
-
-
+  <div class="container">
     <header class="main-header" data-test="header">
       <a class="main-logo" href="index.html" aria-current="page">
         <img src="images/logo/logotype.svg" width="140" height="70" alt="Логотип сайта Седона"></a>
@@ -21,15 +19,22 @@
             <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">О седоне</a>
+            <a class="nav-link" href="#">О Cедоне</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-current" href="#" aria-current="page">Гостиницы</a>
             </li>
         </ul>
+
         <div class="nav-wrapp">
           <ul class="nav-user ">
-            <li class="nav-item"><a class="nav-link" href="#search"><span class="visually-hidden">Поиск</span> </a>
+            <li class="nav-item"><a class="nav-link" href="#search">
+              <span class="visually-hidden">Поиск</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Отзывы</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link user-link-favorit" href="#">
@@ -42,8 +47,8 @@
         </div>
       </nav>
     </header>
+
     <main class="inner-main" data-test="main">
-<div class="container">
       <section class="filters" data-test="filter">
         <header class="inner-header">
           <h1 class="main-title">Гостиницы Седоны</h1>
@@ -116,13 +121,15 @@
               <input class="control-input" type="text" name="to" placeholder="9000">
             </label>
           </fieldset>
-          <div class="filter-wrapp">
+          <div class="filter-wrapp"> 
             <button class="button-apply" type="submit">Применить</button>
-            <button class="button-button-reset" type="reset">Сбросить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
 
       <section class="catalog" data-test="catalog">
+    <div class="wrap-sort">
         <h2 class="title-lead"> Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
@@ -244,7 +251,7 @@
   </main>
 
   <footer class="main-footer" data-test="footer">
-    <div class="subscribe subscribe-main" data-test="subscribe">
+    <div class="subscribe subscribe-main-second" data-test="subscribe">
       <h2 class="title-lead">Подпишитесь на рассылку</h2>
       <p class="subtitle"><span class="block">Только полезная информация и никакого спама,</span> честное бойскаутское!
       </p>
@@ -257,18 +264,22 @@
 
     <div class="footer-wrapp">
       <ul class="footer-social">
+
+        
         <li class="social-item">
-          <a href="https://vk.com/htmlacademy" class="social-link">
+          <a href="https://vk.com/htmlacademy" class="social-vk-link">
             <span class="visually-hidden">vkontakte</span>
           </a>
         </li>
+     
+
         <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy ">
+          <a href="https://t.me/htmlacademy " class="social-tg-link" >
             <span class="visually-hidden">telegram</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-yout-link">
             <span class="visually-hidden">youtube</span>
           </a>
         </li>
@@ -281,5 +292,4 @@
   </footer>
   </div>
 </body>
-</div>
 </html>
