@@ -1,4 +1,3 @@
-               /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ОБЩИЙ ШРИФТ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -15,42 +14,38 @@
   font-display: swap;
 }
 
-/* ++++++++++++++++  СБРОС +++++++++++++++++++ */
 .nav-list,
 .nav-user,
 .qulaity-list,
 .footer-social,
 .breadcrumbs,
 .filter-list,
-.card-view-buttons,
-.hotels-list,
+/* .card-view-buttons, */
+
 .pagination {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* ================= */
-.main-title,
-.title-lead,
-.subtitle,
+
 .text,
 .phone-text {
   margin: 0;
 }
 
- /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ЛИПУЧКА ДЛЯ КОНТЕНТА ВСЕГО %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .html {
   height: 100%;
-} 
- 
+}
+
 .body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+  min-width: 1200px;
   min-height: 100%;
   background-color: #F2F2F2;
-} 
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: column;
+
+}
 
 .website-container {
   margin: 0 auto;
@@ -58,24 +53,21 @@
   height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 21px;
   color: #333333;
   background-color: #ffffff;
   box-shadow: 0 10px 15px #cdcccc;
   flex-wrap: nowrap;
-  }
-
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   ШРИФТЫ  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+}
 
 .main-title {
+  margin: 0;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  text-align: center;
-  
 }
-/* ============================== */
+
 .title-lead {
+  margin: 0;
   margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
@@ -86,20 +78,26 @@
 }
 
 .subtitle {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .title-card,
 .title-card-black {
   margin: 0;
   margin-bottom: 30px;
+  width: 175px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  display: block;
 }
-/* ========================================== */
+
+
 .phone-text {
   font-family: "PT Sans";
   font-weight: 400;
@@ -110,28 +108,24 @@
   text-decoration: none;
 }
 
-.block {
+.text {
   display: block;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
-.select-control {
-  font-family: inherit;
-}
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++  ОБЩАКОВСКИЕ СТИЛИ +++++++++++++++++++++++++++++++++++++++++++++++++ */
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
-  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-/* --------------------------------------- КНОПЧУХИ--------------------------------- изучи */
 .button {
   padding: 8px 34px;
   font-size: 20px;
@@ -164,14 +158,12 @@
   line-height: 20px;
   font-family: "PT Sans";
   font-weight: 700;
-  /* font-family: inherit; */
   color: #FFFFFF;
   padding: 8px 50px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.0)
 }
-
 
 .button-color {
   font-size: 16px;
@@ -186,7 +178,7 @@
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   padding: 8px 50px;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -199,17 +191,16 @@
   font-weight: 400;
   width: 452px;
   height: 52px;
-  background-color: #FFFFFF;
-  border-radius: 4px;
+  background-color: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
   border: none;
- 
-}
 
+}
 
 .button-light {
   background-color: transparent;
 }
- 
+
 .hotel-list .button {
   font-size: 16px;
   line-height: 20px;
@@ -222,25 +213,33 @@
   font-weight: 700;
   line-height: 20px;
   border-radius: 4px;
-  padding: 8px 25px;
+  padding: 8px 20px;
   text-align: center;
   font-style: normal;
   text-decoration: none;
   background-color: #756157;
+  text-transform: uppercase;
+  appearance: none;
+  cursor: pointer;
+  border: 0;
 }
 
 .hotel-favorites-button-celected {
-color: #FFFFFF;
-font-family: PT Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-border-radius: 4px;
-padding: 8px 25px;
-text-align: center;
-font-style: normal;
-text-decoration: none;
+  color: #FFFFFF;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
   background-color: #7DB54F;
+  text-transform: uppercase;
+  appearance: none;
+  cursor: pointer;
+  border: 0;
 }
 
 .hotel-favorites-button-default {
@@ -250,23 +249,31 @@ text-decoration: none;
   font-weight: 700;
   line-height: 20px;
   border-radius: 4px;
-  padding: 8px 25px;
+  padding: 8px 20px;
   text-align: center;
   font-style: normal;
   text-decoration: none;
   background-color: #82B3D3;
+  text-transform: uppercase;
+  appearance: none;
+  cursor: pointer;
+  border: 0;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ ЗАГОЛОВОК header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .main-header {
   display: flex;
   padding: 0 70px;
 }
 
+.element.style {
+  display: block;
+}
+
 .main-logo {
   position: relative;
+  width: 140px;
   display: block;
-  margin-right: 30px;
+  margin-right: 28px;
   margin-bottom: -6px;
 }
 
@@ -291,8 +298,6 @@ text-decoration: none;
   flex-wrap: wrap;
   gap: 4px;
   min-width: 88px;
-  /* проверь !!!!!!!!!!!!!!!!!!!! */
-  /* margin-right: 20px; */
   align-items: center;
   margin-left: auto;
 }
@@ -301,7 +306,7 @@ text-decoration: none;
   display: flex;
   align-items: center;
   gap: 20px;
-  
+
 }
 
 .nav-link {
@@ -319,17 +324,22 @@ text-decoration: none;
 .nav-link:hover,
 .phone-text:hover,
 .hotel-list:hover {
-  color:#756157;
+  color: #756157;
 }
-/* ====================================================================СМОТРИ */
+
 .navigation {
   flex-wrap: nowrap;
   display: flex;
   width: 1200px;
   margin: 0 auto;
 }
-/* ====================================================================СМОТРИ */
+
 .favorit-page {
+  display: block;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 5px;
+  border-radius: 50%;
   color: #ffffff;
   background-color: #7DB54F;
 }
@@ -338,16 +348,16 @@ text-decoration: none;
 
 
 .hero {
-  
+
   padding: 50px 70px 80px;
   color: #ffffff;
   background-color: #467AA9;
-  background-image: url("../images/fon/index02_bg.png"), url("../images/fon/index01-bg.jpg");
+  background-image: url("../images/fon/index01_bg.png"), url("../images/fon/index02-bg.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
-} 
+}
 
 .hero-img {
   display: block;
@@ -356,8 +366,7 @@ text-decoration: none;
 
 /* +++++++++++++++++++++++++++++++++++++ ADVANTAGES +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.advantages,
-.service {
+.advantages {
   text-align: center;
 }
 
@@ -374,7 +383,7 @@ text-decoration: none;
 
 .qulaity-list-wide .qulaity-item {
   color: #ffffff;
-background-color: #82B3D3;
+  background-color: #82B3D3;
 }
 
 .qulaity-item {
@@ -390,10 +399,10 @@ background-color: #82B3D3;
   background-color: rgba(130, 179, 212, 12%);
 }
 
-.qulaity-item::after {  
+.qulaity-item::after {
   position: absolute;
 }
-/* ++++++++++++++++++++++++++++  иЗМЕНИТЬ ЦВЕТ ++++++++++++++ */
+
 .title-card::after {
   content: "";
   width: 62px;
@@ -416,24 +425,12 @@ background-color: #82B3D3;
   display: block;
 }
 
-/* +++++++++++++++++++++++++++++ ПОЧИСТИ +++++++++++++++++++++++++ */
- /* .advantages .qulaity-list-wide > .qulaity-item::after,
-.advantages .qulaity-item::after {
-  content: "";
-  width: 60px;       
-  height: 2px;
-  background-color: rgb(224, 26, 26);
-}  */
-/* 
- .qulaity-item::after {
-  background-color: rgba(175, 9, 9, 0.986);
-} */
-
 .qulaity-img {
   display: block;
 }
+
 /* ++++++++++++++++++++++++++++++++++++++ ПРОВЕРЬ УДАЛИ ++++++++++++++++ */
- /* .qulaity-list-wide .title-card {
+/* .qulaity-list-wide .title-card {
  color: #ffffff; 
 } */
 
@@ -443,16 +440,20 @@ background-color: #82B3D3;
 }
 
 .advantages li.qulaity-item:nth-of-type(odd) {
-  background-color:rgba(130, 179, 212, 20%);
+  background-color: rgba(130, 179, 212, 20%);
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++ SERVISE  ДОМ ЕДА ПОДАРОК ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.service {
+  text-align: center;
+}
+
 .servise-wrapp {
   padding: 64px 340px;
 }
 
 .service li.qulaity-item:nth-of-type(even) {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 .qulaity-item-icon {
@@ -473,11 +474,11 @@ background-color: #82B3D3;
   margin-bottom: 54px;
 }
 
- .search .button,
+.search .button,
 .subscribe-form .button {
   padding-left: 50px;
   padding-right: 50px;
-} 
+}
 
 .search .button {
   display: inline-block;
@@ -493,7 +494,7 @@ background-color: #82B3D3;
 .subscribe-main {
   color: #ffffff;
   background-color: #808080;
- /* ===+++++++  ПРОВЕРить ФОНЫ  ++++++ +++++====================================================++++++++++++++++++ */
+  /* ===+++++++  ПРОВЕРить ФОНЫ  ++++++ +++++====================================================++++++++++++++++++ */
   background-image: url("../images/fon/index03_bg.jfif");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -533,16 +534,17 @@ background-color: #82B3D3;
   line-height: 36px;
   border-radius: 0;
 }
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER НИЖНИЙ КОЛОНТИТУЛ+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .main-footer {
-  margin-bottom: 100px; 
+  margin-bottom: 100px;
 }
 
 .footer-wrapp {
   display: flex;
   justify-content: space-between;
   padding: 40px 70px 30px;
-  
+
 }
 
 .htmlacademy-link {
@@ -551,7 +553,7 @@ background-color: #82B3D3;
   height: 33px;
 }
 
- .htmlacademy-link::before {
+.htmlacademy-link::before {
   content: "";
   display: block;
   min-width: 115px;
@@ -561,7 +563,8 @@ background-color: #82B3D3;
   mask-size: 115px 33px;
   mask-repeat: no-repeat;
   mask-position: center;
- }
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++??????????? */
 
 .footer-social {
@@ -569,7 +572,7 @@ background-color: #82B3D3;
   flex-wrap: wrap;
   gap: 20px;
   max-width: 150px;
-    
+
 }
 
 .social-link {
@@ -580,15 +583,15 @@ background-color: #82B3D3;
 }
 
 .social-vk-link::before {
- content: "";
- display: block;
- min-width: 24px;
- min-height: 14px;
- background-color: #83B3D3;
- mask-image: url(../images/icon/vkontakte.svg);
- mask-size: 24px 14px;
- mask-repeat: no-repeat;
- mask-position: center;
+  content: "";
+  display: block;
+  min-width: 24px;
+  min-height: 14px;
+  background-color: #83B3D3;
+  mask-image: url(../images/icon/vkontakte.svg);
+  mask-size: 24px 14px;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .social-vk-link:hover::before {
@@ -605,13 +608,13 @@ background-color: #82B3D3;
   mask-size: 18px 15px;
   mask-repeat: no-repeat;
   mask-position: center;
- }
+}
 
- .social-tg-link:hover::before {
+.social-tg-link:hover::before {
   background-color: #070f80;
 }
 
- .social-yout-link::before {
+.social-yout-link::before {
   content: "";
   display: block;
   min-width: 22px;
@@ -621,15 +624,16 @@ background-color: #82B3D3;
   mask-size: 22px 17px;
   mask-repeat: no-repeat;
   mask-position: center;
- }
+}
 
 .social-yout-link:hover::before {
   background-color: #070f80;
 }
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CATALOG ++++++++++++++++++++++++++++++++++ */
 .filters {
   padding: 35px 70px 70px;
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
   color: #ffffff;
   background-color: #808080;
   background-image: url(../images/fon/catalog01-bg.jpg);
@@ -653,6 +657,7 @@ background-color: #82B3D3;
   color: #ffffff;
   text-decoration: none;
 }
+
 /* ========================================ФИЛЬТР===================== */
 .catalog-filter {
   display: flex;
@@ -661,7 +666,7 @@ background-color: #82B3D3;
 
 .filter-title {
   margin-bottom: 32px;
-  
+
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -688,108 +693,14 @@ background-color: #82B3D3;
 .wrap-sort {
   display: flex;
   padding: 50px 0 40px;
+  gap: 70px;
 }
 
 .wrap-sort .title-lead {
-  margin-right: 200px;
+  /* margin-right: auto;
   margin-bottom: 0;
-  flex-grow: 1;
+  flex-grow: 1; */
 }
-
-.select-control {
-  margin-right: 70px;
-}
-
-.card-view-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.card-button {
-  padding: 17px 16px;
-  min-width: 16px;
-  min-height: 14px;
-
-}
-/* +++++++++++++++++++++++++++++ */
-.catalog {
-  padding: 0 70px;
-}
-
- .hotels-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.hotel-link {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #181717;
-  text-decoration: none;
-}
-
-.rating-text {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.star {
-  height: 17px;
-  width: 85px; 
-  }
-  
-  .star::before {
-    content: '';
-    display: block;
-    height: 17px;
-    background-image: url(../images/icon/star.svg);
-    background-repeat: space no-repeat;
-    background-size: contain;
-    
-  }
-  
-  .star-4::before {
-    width: 85px; 
-  }
-
-  .star-3::before {
-    width: 65px; 
-  }
-
-  .star-2::before {
-    width: 45px; 
-  }
-
-
-.pagination {
-  display: flex;
-  gap: 8px;
-  padding: 40px 0 60px;
-}
-
-.pag-link {
-   box-sizing: border-box;
-   min-width: 60px;
-   min-height: 60px;
-
-   padding: 11px 11px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.pag-disabled {
-  color: #000000;
-  background-color: #F2F2F2;
-}
-
-/* ;;;;;;;;$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 .catalog-filter-group {
   border: none;
@@ -815,15 +726,222 @@ background-color: #82B3D3;
 }
 
 .select-control {
-  font-family: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 292px;
+  padding: 8px 38px 8px 20px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
+  background-image: url(../images/icon/price_selector.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  min-width: 292px;
+  max-height: 50px;
+  padding: 12px 52px 12px 20px;
+  margin-left: auto;
+  margin-right: 70px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* =========================================================================================== */
+.card-view-buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
+/* =======================ПРОБА МАСКИ++++++++++++++ */
+ .card-view-tile {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+} 
+
+ .card-button-tile::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  mask-image: url(../images/icon/tile_ic.svg);
+  mask-size: 40px 40px;
+}
+
+.card-button-large::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  mask-image: url(../images/icon/large_ic.svg);
+  mask-size: 40px 40px;
+}
+
+.card-button-list::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  mask-image: url(../images/icon/list_ic.svg);
+  mask-size: 40px 40px;
+}
+
+ .card-button-tile:hover::before,
+ .card-button-list:hover::before,
+ .card-button-large:hover::before {
+  background-color: #7562e0;
+} 
+/* =======================ПРОБА МАСКИ++++++++++++++ */
+.catalog {
+  padding: 0 70px;
+}
+
+.hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 39px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.hotel-item {
+  width: 340px;
+  padding: 20px 19px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.hotel-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #181717;
+  text-decoration: none;
+}
+
+.hotel-type {
+  display: flex;
+  Width: 300px;
+  font-size: 18px;
+  line-height: 21px;
+
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hotel-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: space-between 20px;
+  Width: 300px;
+  line-height: 20px;
+  gap: 20px;
+}
 
 
+.rating-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 5/6;
+}
 
+.rating-text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 140px;
+  height: 37px;
+  background-color: #F2F2F2;
+  text-align: center;
+  border-radius: 4px;
+  padding-top: 4px;
+  text-transform: uppercase;
+}
 
+.star {
+  height: 17px;
+  width: 85px;
+  /* margin-top: 10px; */
+  margin-bottom: 0px;
+  width: 140px;
+  height: 30px;
 
+}
+
+.star::before {
+  content: '';
+  display: block;
+  height: 17px;
+  background-image: url(../images/icon/star.svg);
+  background-repeat: space no-repeat;
+  background-size: contain;
+  background-position: 0 center;
+}
+
+.star-4::before {
+  width: 85px;
+}
+
+.star-3::before {
+  width: 65px;
+}
+
+.star-2::before {
+  width: 45px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.pagination {
+  max-width: 510px;
+  min-width: 400px;
+  display: flex;
+  gap: 8px;
+  padding: 40px 0 60px;
+}
+
+.pag-link {
+  box-sizing: border-box;
+  min-width: 60px;
+  min-height: 60px;
+
+  padding: 11px 11px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.pag-disabled {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+/* ;;;;;;;;$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
