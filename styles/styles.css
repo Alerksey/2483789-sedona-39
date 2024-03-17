@@ -14,13 +14,18 @@
   font-display: swap;
 }
 
+html,
+body {
+ height: 100%;
+}
+
 .nav-list,
 .nav-user,
 .qulaity-list,
 .footer-social,
 .breadcrumbs,
 .filter-list,
-/* .card-view-buttons, */
+
 
 .pagination {
   margin: 0;
@@ -28,14 +33,11 @@
   list-style: none;
 }
 
-.text,
-.phone-text {
+.text {
   margin: 0;
 }
 
-.html {
-  height: 100%;
-}
+
 
 .body {
   min-width: 1200px;
@@ -44,7 +46,8 @@
   line-height: 1.2em;
   display: flex;
   flex-direction: column;
-
+  
+  
 }
 
 .website-container {
@@ -57,6 +60,10 @@
   background-color: #ffffff;
   box-shadow: 0 10px 15px #cdcccc;
   flex-wrap: nowrap;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main-title {
@@ -99,6 +106,7 @@
 
 
 .phone-text {
+  margin: 0;
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 40px;
@@ -494,7 +502,6 @@
 .subscribe-main {
   color: #ffffff;
   background-color: #808080;
-  /* ===+++++++  ПРОВЕРить ФОНЫ  ++++++ +++++====================================================++++++++++++++++++ */
   background-image: url("../images/fon/index03_bg.jfif");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -538,19 +545,29 @@
 /* +++++++++++++++++++++++++++++++++++++++++++++++++ FOOTER НИЖНИЙ КОЛОНТИТУЛ+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .main-footer {
   margin-bottom: 100px;
+  width: 100%;
+  flex: 0 0 auto;
 }
 
 .footer-wrapp {
-  display: flex;
+  /* display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px; */
+  width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 275px auto 247px;
+  gap: 16px;
+  align-items: center;
   justify-content: space-between;
   padding: 40px 70px 30px;
-
 }
 
 .htmlacademy-link {
   display: inline-block;
   width: 115px;
   height: 33px;
+  padding: 0 0 0 130px;
 }
 
 .htmlacademy-link::before {
@@ -571,8 +588,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 150px;
-
+  width: 192px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .social-link {
@@ -633,7 +652,6 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CATALOG ++++++++++++++++++++++++++++++++++ */
 .filters {
   padding: 35px 70px 70px;
-  /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
   color: #ffffff;
   background-color: #808080;
   background-image: url(../images/fon/catalog01-bg.jpg);
@@ -696,12 +714,6 @@
   gap: 70px;
 }
 
-.wrap-sort .title-lead {
-  /* margin-right: auto;
-  margin-bottom: 0;
-  flex-grow: 1; */
-}
-
 .catalog-filter-group {
   border: none;
 }
@@ -746,6 +758,7 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 /* =========================================================================================== */
 .card-view-buttons {
   margin: 0;
@@ -762,13 +775,13 @@
 
 
 /* =======================ПРОБА МАСКИ++++++++++++++ */
- .card-view-tile {
+.card-view-tile {
   display: inline-block;
   width: 16px;
   height: 14px;
-} 
+}
 
- .card-button-tile::before {
+.card-button-tile::before {
   content: '';
   display: inline-block;
   width: 40px;
@@ -798,11 +811,12 @@
   mask-size: 40px 40px;
 }
 
- .card-button-tile:hover::before,
- .card-button-list:hover::before,
- .card-button-large:hover::before {
+.card-button-tile:hover::before,
+.card-button-list:hover::before,
+.card-button-large:hover::before {
   background-color: #7562e0;
-} 
+}
+
 /* =======================ПРОБА МАСКИ++++++++++++++ */
 .catalog {
   padding: 0 70px;
@@ -943,5 +957,3 @@
   color: #000000;
   background-color: #F2F2F2;
 }
-
-/* ;;;;;;;;$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
