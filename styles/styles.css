@@ -16,38 +16,39 @@
 
 html,
 body {
- height: 100%;
+  height: 100%;
 }
 
-.nav-list,
-.nav-user,
-.qulaity-list,
 .footer-social,
 .breadcrumbs,
-.filter-list,
-
-
-.pagination {
+.filter-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.text {
-  margin: 0;
-}
-
-
-
 .body {
+  margin: 0;
+  flex-wrap: nowrap;
   min-width: 1200px;
   min-height: 100%;
-  background-color: #F2F2F2;
-  line-height: 1.2em;
   display: flex;
-  flex-direction: column;
-  
-  
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .website-container {
@@ -60,7 +61,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0 10px 15px #cdcccc;
   flex-wrap: nowrap;
-
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -104,7 +104,6 @@ body {
   display: block;
 }
 
-
 .phone-text {
   margin: 0;
   font-family: "PT Sans";
@@ -117,21 +116,11 @@ body {
 }
 
 .text {
+  margin: 0;
   display: block;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .button {
@@ -271,6 +260,7 @@ body {
 .main-header {
   display: flex;
   padding: 0 70px;
+  z-index: 1;
 }
 
 .element.style {
@@ -282,7 +272,7 @@ body {
   width: 140px;
   display: block;
   margin-right: 28px;
-  margin-bottom: -6px;
+  margin-bottom: -10px;
 }
 
 .main-logo-img {
@@ -295,20 +285,79 @@ body {
 
 
 .nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 4px;
-  min-width: 550px;
+  gap: 10px 0;
+  min-width: 340px;
+  max-width: 465px;
 }
 
 .nav-user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
-  min-width: 88px;
+  gap: 4px 0;
   align-items: center;
-  margin-left: auto;
+  min-width: 88px;
+  max-width: 190px;
 }
+
+.user-ic {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.favorit-page {
+  position: absolute;
+  top: 9px;
+  right: 3px;
+  display: block;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
+.user-ic::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 20px 20px;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  mask-position: center;
+}
+
+.user-ic-serch::before {
+  -webkit-mask-image: url(../images/icon/search_ic.png);
+  mask-image: url(../images/icon/search_ic.png);
+}
+
+.user-ic-favorit::before {
+  -webkit-mask-image: url(../images/icon/heart_ic.png);
+  mask-image: url(../images/icon/heart_ic.png);
+}
+
+.user-ic:hover::before {
+  background-color: #756157;
+}
+
+.user-ic:active::before {
+  background-color: rgb(117, 97, 87, 0.3);
+}
+
 
 .nav-wrapp {
   display: flex;
@@ -336,21 +385,19 @@ body {
 }
 
 .navigation {
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap;
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; */
+
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
 }
 
-.favorit-page {
-  display: block;
-  font-size: 10px;
-  line-height: 10px;
-  padding: 5px;
-  border-radius: 50%;
-  color: #ffffff;
-  background-color: #7DB54F;
-}
+
 
 /* ++++++++++++++++++++++++++++++++++++++++++++ HERO ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -384,6 +431,9 @@ body {
 }
 
 .qulaity-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   text-align: center
@@ -933,6 +983,9 @@ body {
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   max-width: 510px;
   min-width: 400px;
   display: flex;
