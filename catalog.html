@@ -70,18 +70,24 @@
                   <input class="control-input" type="checkbox" name="pool" checked>
                   Бассейн
                 </label>
+                <!-- <input class="control-input" type="checkbox" id="pool" name="pool" checked>
+                <label for="pool">Бассейн</label> -->
               </li>
               <li class="filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked>
                   Парковка
                 </label>
+                <!-- <input class="control-input" type="checkbox" id="parking" name="parking" checked>
+                <label for="parking">Парковка</label> -->
               </li>
               <li class="filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wi-fi">
                   Wi-Fi
                 </label>
+                <!-- <input class="control-input" type="checkbox" id="wi-fi" name="wi-fi">
+                <label for="wi-fi">Wi-Fi</label> -->
               </li>
             </ul>
           </fieldset>
@@ -90,19 +96,19 @@
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" value="hotel" checked>
+                  <input class="control-input-radio" type="radio" name="housing" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" value="motel">
+                    <input class="control-input-radio" type="radio" name="housing" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" value="apartments">
+                  <input class="control-input-radio" type="radio" name="housing" value="apartments">
                   Апартаменты
                 </label>
               </li>
@@ -110,11 +116,15 @@
           </fieldset>
           <fieldset class="search-filter-group">
             <legend class="filter-title">Стоимость, ₽:</legend>
-            <label class="control">От
-              <input class="control-input" type="text" name="from" placeholder="0">
+            <label class="control">
+              <!-- <input class="control-input" type="text" name="from" placeholder="0">
+              <input class="cost-input-min" type="text" name="from" placeholder="0"> -->
+              <input class="cost-input-min" type="number" name="from" placeholder="0">
             </label>
-            <label class="control">До
-              <input class="control-input" type="text" name="to" placeholder="9000">
+            <label class="control">
+              <!-- <input class="control-input" type="text" name="to" placeholder="9000"> -->
+              <!-- <input class="cost-input-max" type="text" name="to" placeholder="9000"> -->
+                <input class="cost-input-max" type="number" name="to" placeholder="9000">
             </label>
           </fieldset>
           <div class="filter-wrapp"> 
