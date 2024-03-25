@@ -110,7 +110,10 @@ body {
   line-height: 26px;
   text-align: center;
 }
-
+.subtitle span {
+  display: inline-block;
+  width: 100%;
+}
 .title-card,
 .title-card-black {
   margin: 0;
@@ -195,6 +198,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
   border-radius: 0px 4px 4px 0px;
   padding: 8px 50px;
   color: #FFFFFF;
@@ -203,6 +207,13 @@ body {
 }
 
 .field {
+   padding: 0px 20px 0px 20px;
+   /* font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    border: none; */
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -558,7 +569,7 @@ ul .user-ic-favorit {
 .subscribe-form {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 10px 0;
   border-radius: 4px;
@@ -771,12 +782,17 @@ ul .user-ic-favorit {
  .control-input-radio:disabled {
   opacity: 0.4;
  }
+ .control-input-cost {
+   width: 143px;
+   height: 48px;
+ }
 .cost-input-min {
    appearance: none;
    display: inline-block;
    width: 143px;
    height: 48px;
-   background: #fff;
+   padding: 12px, 20px, 12px, 20px;
+   background: #F2F2F2;
    border-bottom-left-radius: 4px;
    border-top-left-radius: 4px;
    font-weight: 700;
@@ -786,10 +802,10 @@ ul .user-ic-favorit {
 .cost-input-max {
    appearance: none;
    display: inline-block;
-   padding: 12px, 20px, 12px, 20px;
    width: 143px;
    height: 48px;
-   background: #fff;
+   padding: 12px, 20px, 12px, 20px;
+   background: #F2F2F2;
    border-bottom-right-radius: 4px;
    border-top-right-radius: 4px;
    font-weight: 700;
@@ -800,6 +816,8 @@ ul .user-ic-favorit {
 /* +++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++ ot i DO+++++++++++ */
 .search-filter-group {
+  width: 288px;
+  height: 48px;
   margin: 0;
   padding: 0;
   border: 0;
