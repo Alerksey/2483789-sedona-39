@@ -82,7 +82,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0 10px 15px #cdcccc;
 }
 
@@ -94,14 +94,14 @@ body {
 }
 
 .title-lead {
-  margin: 0;
-  margin-bottom: 20px;
+  max-width: 700px;
+  /* margin: 0 auto; */
   font-size: 30px;
-  line-height: 36px;
   font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
+  line-height: 36px;
   color: #000000;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -324,7 +324,7 @@ body {
   gap: 4px 0;
   align-items: center;
   min-width: 88px;
-  max-width: 190px;
+  max-height: 130px;
 }
 /* .nav-item {
   width: 44px;
@@ -415,8 +415,14 @@ ul .user-ic-favorit {
 }
 
 .adv-wrapp {
-  padding: 69px 260px;
-  margin-bottom: 21px;
+    margin: 0 auto;
+    padding: 69px 70px;
+    margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
 }
 
 .qulaity-list {
@@ -538,7 +544,7 @@ ul .user-ic-favorit {
 .subscribe-main {
   color: #ffffff;
   background: #808080 url("../images/fon/index03_bg.jfif") no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .subscribe-main .title-lead {
@@ -1015,7 +1021,7 @@ ul .user-ic-favorit {
 
 .button-wrap {
   display: flex;
-  justify-content: space-between 20px;
+  justify-content: space-between;
   Width: 300px;
   line-height: 20px;
   gap: 20px;
