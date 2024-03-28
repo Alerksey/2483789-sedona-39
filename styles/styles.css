@@ -342,7 +342,104 @@ ul .user-ic-favorit {
   align-items: center;
   gap: 20px;
 }
+/* ================================== под навигацией полоса =============== */
+.nav-link-user {
+  padding: 22px 12px;
+}
+/*
+.nav-link:hover,
+.phone-text:hover {
+  color: #756157;
+} */
 
+.nav-link:active,
+.phone-text:active {
+  color: rgb(117, 97, 87, 0.3);
+}
+
+.nav-link-current {
+  position: relative;
+}
+
+.nav-link-current::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  background-color: #756257;
+}
+
+.range-scale {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+.range-scale::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+.range-toggle {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.range-toggle:disabled {
+  background-color: #E5E5E5;
+}
+
+.range-toggle:not(:disabled):hover {
+  cursor: pointer;
+  background-color: #68A2CA;
+}
+
+.range-toggle:not(:disabled):active {
+  background-color: #82B3D3;
+}
+
+.button-big:first-child {
+  margin-top: auto;
+}
+
+
+
+
+/* ================================== под навигацией =============== */
 .nav-link {
   display: block;
   padding: 20px 16px;
@@ -523,7 +620,7 @@ background-image: url("../images/icon/gift.svg");
 .qulaity-item-icon {
   background-repeat: no-repeat;
   background-position: center 81px;
-} 
+}
 
 /* ++++++++++++++++++++++++++++++++ SEARCH +++++++++++++++++++++++++++++++++++++++++++++ */
 .search {
@@ -859,7 +956,7 @@ background-image: url("../images/icon/gift.svg");
 
 .control {
   line-height: 23px;
-  /* padding-left: 36px; 
+  /* padding-left: 36px;
  position: relative;
   display: block;  */
 }
